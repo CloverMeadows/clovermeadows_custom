@@ -36,7 +36,16 @@ body {
   font-weight: 100;
 }
 
-.parrallax {
+.parallax-wool{
   height: 300px;
-  background: $pantone-blue;
+  background: transparent;
+}
+
+.content {
+  min-height: 800px;
+}
+
+.footer {
+  background-color: $pantone-blue;
+  min-height: 500px;
 }
