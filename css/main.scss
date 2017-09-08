@@ -1,3 +1,42 @@
 ---
 # site specific css
 ---
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato:light');
+
+$pantone-blue: #486972;
+$pantone-green: #83B14F;
+
+body {
+  // Pantone's color of the year, hooray!!
+  background: $pantone-green;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.big-image {
+  background: $pantone-blue;
+  height: 95vh;
+}
+
+.big-image-caption {
+  background-color: #434b52;
+  opacity: .8;
+  color: white;
+  width: 35%;
+  padding: 10px;
+  margin-right: -15px;
+}
+
+.big-info > h1 {
+  font-family: 'Alegreya', serif;
+  font-weight: bolder;
+}
+
+.big-info > h4 {
+  font-weight: 100;
+}
+
+.parrallax {
+  height: 300px;
+  background: $pantone-blue;
+}
