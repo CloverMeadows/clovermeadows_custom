@@ -25,11 +25,13 @@ body {
   width: 35%;
   padding: 10px;
   margin-right: -15px;
+  box-shadow: #062c33 -5px 5px 5px;
 }
 
 .big-info > h1 {
   font-family: 'Alegreya', serif;
   font-weight: bolder;
+  text-shadow: #062c33 1px 1px;
 }
 
 .big-info > h4 {
@@ -41,9 +43,6 @@ body {
   background: transparent;
 }
 
-.content {
-  min-height: 800px;
-}
 
 .footer {
   background-color: $pantone-blue;

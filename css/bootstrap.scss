@@ -2,23 +2,15 @@
 # modify bootstrap variables here
 ---
 @import "bootstrap";
-
-
-nav {
-  height: 5vh;
-}
+$pantone-blue: #486972;
+$pantone-green: #83B14F;
 
 .navbar-light {
   background-color: #fff;
+  font-family: 'Alegreya', serif;
 }
 
-@media (min-width: 768px) {
-  .navbar-brand.abs
-  {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
-  }
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 25px;
 }
