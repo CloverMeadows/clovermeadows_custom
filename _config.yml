@@ -9,6 +9,8 @@ sass:
     sass_dir: /bootstrap-4.0.0.beta/assets/stylesheets
     style: :compressed
 
+font-awesome: font-awesome-4.7.0
+
 kramdown:
   input: GFM
   hard_wrap: true
