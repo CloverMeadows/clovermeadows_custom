@@ -2,22 +2,29 @@
 layout: base
 ---
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6 big-image d-flex align-items-center justify-content-end">
-            <div class="big-image-caption text-center">
-                <span>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+    <div class="row hidden-sm-down">
+        <div class="big-image col-lg-6 col-md-12 d-flex align-items-center justify-content-end">
+            <div class="big-image-caption col-lg-8 col-md-4 text-center">
+                <span>
+                    Clover Meadows Ranch is located just outside Sheridan Montana, known as the 'Heart of the Ruby Valley'.
+                    It's nestled at the foot of the Tobacco Root Mountain Range, and overlooked by the 'Old Baldy' mountain.
+                </span>
             </div>
         </div>
-        <div class="col-md-6 align-self-center text-center">
-            <div class="container col-md-6 big-info">
-                <h1>Lorem ipsum dolor sit</h1>
+        <div class="big-info col-lg-6 col-md-12 d-flex align-items-center">
+            <div class="container col-lg-10  col-xl-8 text-center">
+                <h1>Clover Meadows Targhees</h1>
                 <h4>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
                 some more text
             </div>
         </div>
     </div>
-    <div class="row parallax-wool"></div>
+    <div class="row parallax-wool">
+        <div class="container d-flex align-items-center justify-content-center">
+            <object id="clover-logo" type="image/svg+xml" data="/img/clover.svg" height="200"></object>
+        </div>
+    </div>
 
     <div class="row content">
         <div class="text-center">
@@ -28,7 +35,14 @@ layout: base
 
 
     <script>
-        $('.parallax-wool').parallax({imageSrc: '/img/wool.jpg', speed:0.5, androidFix: false});
+        $(window).on("load", function(e) {
+            $('.parallax-wool').parallax({imageSrc: '/img/wool.jpg', speed:0.5, androidFix: false});
+        });
+
+        $("#clover-logo").on("load", function() {
+            var doc = this.getSVGDocument();
+            $(doc).contents().find('.face').attr({"fill": "white"});
+        });
     </script>
 
 </div>
